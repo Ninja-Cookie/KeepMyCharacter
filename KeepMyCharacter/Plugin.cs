@@ -8,7 +8,7 @@ namespace KeepMyCharacter
     {
         public const string pluginGuid      = "ninjacookie.brc.keepmycharacter";
         public const string pluginName      = "KeepMyCharacter";
-        public const string pluginVersion   = "1.0.0";
+        public const string pluginVersion   = "1.0.1";
 
         public void Awake()
         {
