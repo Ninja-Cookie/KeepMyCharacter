@@ -41,15 +41,6 @@ namespace KeepMyCharacter.Patches
             }
         }
 
-        [HarmonyPatch(typeof(CharacterVisual), "Init")]
-        public static class CharacterVisual_Init_Patch
-        {
-            public static void Prefix(ref Characters character)
-            {
-                character = GetCurrentCharacter();
-            }
-        }
-
         private static Characters GetCurrentCharacter()
         {
             Player player = WorldHandler.instance?.GetCurrentPlayer();
